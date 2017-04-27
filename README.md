@@ -1,6 +1,6 @@
 # whoareyou
 
-논문
+(논문)인접 조건 검사에 의한 초고속 한국어 형태소 분석
 http://cs.sungshin.ac.kr/~shim/download/04_01.pdf
 
 Mach
