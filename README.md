@@ -12,7 +12,7 @@ http://eunjeon.blogspot.kr/
 mecab-ko-lucene-analyzer
 https://bitbucket.org/eunjeon/mecab-ko-lucene-analyzer/src/2b345772535f081a3445da97d8738d03ed011ca0/?at=release-0.21.0
 
-# solr
+# Solr
 
 Solr
 http://lucene.apache.org/solr/
