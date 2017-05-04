@@ -19,3 +19,6 @@ http://lucene.apache.org/solr/
 
 QuickStart
 http://lucene.apache.org/solr/quickstart.html
+
+PDF
+http://apache.tt.co.kr/lucene/solr/ref-guide/apache-solr-ref-guide-6.5.pdf
