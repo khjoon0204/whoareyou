@@ -26,13 +26,13 @@ http://apache.tt.co.kr/lucene/solr/ref-guide/apache-solr-ref-guide-6.5.pdf
 
 # install on MAC
 
-mecab-java-0.996에서 Makefile 편집.
+1. mecab-java-0.996에서 Makefile 편집.
 
 ...
 INCLUDE=/System/Library/Frameworks/JavaVM.framework/Headers
 ...
 
-설치후,
+2. 설치후,
 
 sudo mv /usr/local/lib/libMeCab.so /usr/local/lib/libMeCab.dylib
 
