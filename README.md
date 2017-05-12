@@ -29,7 +29,9 @@ http://apache.tt.co.kr/lucene/solr/ref-guide/apache-solr-ref-guide-6.5.pdf
 1. mecab-java-0.996에서 Makefile 편집.
 
 ...
+
 INCLUDE=/System/Library/Frameworks/JavaVM.framework/Headers
+
 ...
 
 2. 설치후,
