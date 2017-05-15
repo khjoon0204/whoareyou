@@ -45,7 +45,7 @@ sudo mv /usr/local/lib/libMeCab.so /usr/local/lib/libMeCab.dylib
 
 ![Alt text](https://github.com/khjoon0204/whoareyou/blob/master/done1.png)
 
-# Example
+# Example 1
 
 Input:
 
