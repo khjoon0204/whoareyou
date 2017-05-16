@@ -36,10 +36,10 @@ https://wiki.apache.org/nutch/NutchTutorial
 bash_profile 설정
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 
-integrate Nutch with Solr 
+integrate Nutch with Solr
 http://stackoverflow.com/questions/38525848/solr-6-and-nutch-2-3-1-integration?answertab=active#tab-top
  
-bin/nutch index... 시, indexWriters가 올바르게 activated 되지 않을 경우
+$bin/nutch index... 시, indexWriters가 올바르게 activated 되지 않을 경우
 EX)SolrIndexWriters를 타지 않고 ElasticIndexWriters를 탄다.
 -> nutch설치경로/conf/nutch-site.xml 에서
 ![Alt text](https://github.com/khjoon0204/whoareyou/blob/master/nutchsite.png)
