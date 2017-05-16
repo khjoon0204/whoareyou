@@ -30,7 +30,6 @@ bin/solr create -c core_name
 
 https://wiki.apache.org/nutch/NutchTutorial
 
-
 # [MAC] Solr 6.5.1 - Nutch 1.13  연동 주의사항
 
 bash_profile 설정
@@ -59,7 +58,6 @@ INCLUDE=/System/Library/Frameworks/JavaVM.framework/Headers
 2. 설치후,
 
 sudo mv /usr/local/lib/libMeCab.so /usr/local/lib/libMeCab.dylib
-
 
 ![Alt text](https://github.com/khjoon0204/whoareyou/blob/master/done1.png)
 
