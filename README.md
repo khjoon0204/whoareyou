@@ -45,7 +45,7 @@ EX)SolrIndexWriters를 타지 않고 ElasticIndexWriters를 탄다.
 'indexer-solr'가 포함되어있는지 확인한다.
 http://stackoverflow.com/questions/17649567/nutch-message-no-indexwriters-activated-while-loading-to-solr
 
-# install on MAC
+# [MAC] MeCab 설치
 
 1. mecab-java-0.996에서 Makefile 편집.
 
