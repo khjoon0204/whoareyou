@@ -23,10 +23,34 @@ http://lucene.apache.org/solr/quickstart.html
 PDF
 http://apache.tt.co.kr/lucene/solr/ref-guide/apache-solr-ref-guide-6.5.pdf
 
+코어 (Collection) 생성
+bin/solr create -c core_name
+
 # Nutch
 
 https://wiki.apache.org/nutch/NutchTutorial
 
+# [MAC] Solr 6.5.1 - Nutch 1.13  연동 주의사항
+
+* bash_profile 설정
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
+
+* integrate Nutch with Solr  
+http://stackoverflow.com/questions/38525848/solr-6-and-nutch-2-3-1-integration?answertab=active#tab-top
+ 
+* bin/nutch index... 시, indexWriters가 올바르게 activated 되지 않을 경우
+EX)SolrIndexWriters를 타지 않고 ElasticIndexWriters를 탄다.
+--> nutch설치경로/conf/nutch-site.xml 에서
+
+<property>
+  <name>plugin.includes</name>
+  <value>protocol-http|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|indexer-solr|scoring-opic|urlnormalizer-(pass|regex|basic)</value>  
+  ...
+</property>
+
+'indexer-solr'가 포함되어있는지 확인한다.
+
+http://stackoverflow.com/questions/17649567/nutch-message-no-indexwriters-activated-while-loading-to-solr
 
 # install on MAC
 
