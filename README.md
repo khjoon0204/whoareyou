@@ -32,34 +32,36 @@ https://wiki.apache.org/nutch/NutchTutorial
 
 # [MAC] Solr 6.5.1 - Nutch 1.13  연동 주의사항
 
-*bash_profile 설정
+* bash_profile 설정
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 
-*integrate Nutch with Solr
+* integrate Nutch with Solr
 http://stackoverflow.com/questions/38525848/solr-6-and-nutch-2-3-1-integration?answertab=active#tab-top
  
-*$bin/nutch index... 시, indexWriters가 올바르게 activated 되지 않을 경우
+* $bin/nutch index... 시, indexWriters가 올바르게 activated 되지 않을 경우
 EX)SolrIndexWriters를 타지 않고 ElasticIndexWriters를 탄다.
 > nutch설치경로/conf/nutch-site.xml 에서
 ![Alt text](https://github.com/khjoon0204/whoareyou/blob/master/nutchsite.png)
 'indexer-solr'가 포함되어있는지 확인한다.
 http://stackoverflow.com/questions/17649567/nutch-message-no-indexwriters-activated-while-loading-to-solr
 
-*Indexer: java.io.IOException: Job failed!
+* Indexer: java.io.IOException: Job failed!
 > $bin/nutch index -Dsolr.server.url=http://localhost:8983/solr/mecabnutch crawl/crawldb/ -linkdb crawl/linkdb -dir crawl/segments/ -filter -normalize -deleteGone
 
-*Solr Query Error: "undefined field _text_"
+* Solr Query Error: "undefined field _text_"
 solr설치경로/server/solr/core이름/conf/solrconfig.xml에서
 
-<pre><code>
+```
+
   <initParams path="/update/**,/query,/select,/tvrh,/elevate,/spell,/browse">
     <lst name="defaults">
       <str name="df">text</str>
     </lst>
   </initParams>
-</code></pre>
+  
+  ```
 
-"_text_"를 managed-schema에 있는 <code> <defaultSearchField>text</defaultSearchField> </code> 와 맞춘다
+"_text_"를 managed-schema에 있는 ``` <defaultSearchField>text</defaultSearchField> ``` 와 맞춘다
 "df" 는 default를 의미한다
 http://stackoverflow.com/questions/10130163/solr-query-http-error-404-undefined-field-text/10130462#10130462http://stackoverflow.com/questions/10130163/solr-query-http-error-404-undefined-field-text/10130462#10130462
 
