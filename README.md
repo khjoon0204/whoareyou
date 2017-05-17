@@ -65,6 +65,10 @@ solr설치경로/server/solr/core이름/conf/solrconfig.xml에서
 "df" 는 default를 의미한다
 http://stackoverflow.com/questions/10130163/solr-query-http-error-404-undefined-field-text/10130462#10130462http://stackoverflow.com/questions/10130163/solr-query-http-error-404-undefined-field-text/10130462#10130462
 
+### Nutch ERROR lock file locked already exists. 
+> Remove the lock files before generating a fetch list. 
+> crawldb/.locked 
+> crawldb/..locked.crc 
 
 # [MAC] MeCab 설치
 
