@@ -86,7 +86,7 @@ http://stackoverflow.com/questions/10130163/solr-query-http-error-404-undefined-
 * bin/solr stop -all
 * bin/crawl -i -D solr.server.url=http://localhost:8983/solr/[core명] urls/ [crawl폴더명]/  2
   > bin/crawl -i -D solr.server.url=http://localhost:8983/solr/mecabnutch urls/ news/  2
-* bin/nutch solrindex http://localhost:8983/solr/[crawl폴더명] crawl/crawldb/ -linkdb crawl/linkdb -dir crawl/segments/
+* bin/nutch solrindex http://localhost:8983/solr/[core명] [crawl폴더명]/crawldb/ -linkdb [crawl폴더명]/linkdb -dir [crawl폴더명]/segments/
   > bin/nutch solrindex http://localhost:8983/solr/mecabnutch crawl/crawldb/ -linkdb crawl/linkdb -dir crawl/segments/
 
 # Example 1
