@@ -81,6 +81,12 @@ http://stackoverflow.com/questions/10130163/solr-query-http-error-404-undefined-
 
 ![Alt text](https://github.com/khjoon0204/whoareyou/blob/master/done1.png)
 
+# 실행명령어
+* bin/solr restart -noprompt -Djava.library.path=/usr/local/lib
+* bin/solr stop -all
+* bin/crawl -i -D solr.server.url=http://localhost:8983/solr/[core명] urls/ [crawl폴더명]/  2
+
+
 # Example 1
 
 Input:
